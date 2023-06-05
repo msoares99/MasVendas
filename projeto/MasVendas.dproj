@@ -5,7 +5,7 @@
         <FrameworkType>FMX</FrameworkType>
         <Base>True</Base>
         <Config Condition="'$(Config)'==''">Debug</Config>
-        <Platform Condition="'$(Platform)'==''">Android</Platform>
+        <Platform Condition="'$(Platform)'==''">Win32</Platform>
         <TargetedPlatforms>32787</TargetedPlatforms>
         <AppType>Application</AppType>
         <MainSource>MasVendas.dpr</MainSource>
@@ -207,13 +207,11 @@
             <Form>frmPrincipal</Form>
             <FormType>fmx</FormType>
         </DCCReference>
-        <DCCReference Include="..\scr\Geral\Geral.Cadastros.pas">
+        <DCCReference Include="..\scr\Geral\frmPadrao\Geral.Cadastros.pas">
             <Form>frmCadastroPadrao</Form>
-            <FormType>fmx</FormType>
         </DCCReference>
-        <DCCReference Include="..\scr\Geral\Geral.Cadastros.Edicao.Padrao.pas">
+        <DCCReference Include="..\scr\Geral\frmPadrao\Geral.Cadastros.Edicao.Padrao.pas">
             <Form>frmCadastrosEdicaoPadrao</Form>
-            <FormType>fmx</FormType>
         </DCCReference>
         <DCCReference Include="..\scr\Geral\Geral.Utils.pas"/>
         <DCCReference Include="..\scr\Cliente\ClienteFornecedor.Main.pas">
@@ -228,6 +226,10 @@
         <DCCReference Include="..\scr\API\uPixMercadoPago.pas"/>
         <DCCReference Include="..\scr\Produto\Produto.Main.pas">
             <Form>frmCadastroPadrao1</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="..\scr\Produto\Produto.Edicao.pas">
+            <Form>frmEdicaoProduto</Form>
             <FormType>fmx</FormType>
         </DCCReference>
         <BuildConfiguration Include="Base">

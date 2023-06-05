@@ -11,9 +11,9 @@ type
   TfrmCadastroClienteFornecedor = class(TfrmCadastroPadrao)
     procedure FormShow(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
-    procedure Image2Click(Sender: TObject);
     procedure ListView1ItemClick(const Sender: TObject; const AItem: TListViewItem);
     procedure btnVoltarClick(Sender: TObject);
+    procedure btnAddClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -26,6 +26,17 @@ var
 implementation
 
 {$R *.fmx}
+
+procedure TfrmCadastroClienteFornecedor.btnAddClick(Sender: TObject);
+begin
+  inherited;
+  if not Assigned(frmEdicaoClienteFornecedor) then
+  begin
+    Application.CreateForm(TfrmEdicaoClienteFornecedor, frmEdicaoClienteFornecedor);
+    frmEdicaoClienteFornecedor.TipoAlteracao := TAInclusao;
+  end;
+  frmEdicaoClienteFornecedor.Show;
+end;
 
 procedure TfrmCadastroClienteFornecedor.btnVoltarClick(Sender: TObject);
 begin
@@ -53,17 +64,6 @@ begin
       TListItemText(Objects.FindDrawable('txtCNPJ')).Text := 'CNPJ: 05.277.768/0001-20';
     end;
   end;
-end;
-
-procedure TfrmCadastroClienteFornecedor.Image2Click(Sender: TObject);
-begin
-  inherited;
-  if not Assigned(frmEdicaoClienteFornecedor) then
-  begin
-    Application.CreateForm(TfrmEdicaoClienteFornecedor, frmEdicaoClienteFornecedor);
-    frmEdicaoClienteFornecedor.TipoAlteracao := TAInclusao;
-  end;
-  frmEdicaoClienteFornecedor.Show;
 end;
 
 procedure TfrmCadastroClienteFornecedor.ListView1ItemClick(const Sender: TObject; const AItem: TListViewItem);

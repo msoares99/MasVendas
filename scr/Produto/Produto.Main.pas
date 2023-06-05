@@ -5,13 +5,14 @@ interface
 uses
   System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants, 
   FMX.Types, FMX.Graphics, FMX.Controls, FMX.Forms, FMX.Dialogs, FMX.StdCtrls, Geral.Cadastros, FMX.ListView.Types, FMX.ListView.Appearances,
-  FMX.ListView.Adapters.Base, FMX.Edit, FMX.Objects, FMX.Controls.Presentation, FMX.ListView, FMX.Layouts;
+  FMX.ListView.Adapters.Base, FMX.Edit, FMX.Objects, FMX.Controls.Presentation, FMX.ListView, FMX.Layouts, Produto.Edicao;
 
 type
   TfrmCadastroProduto = class(TfrmCadastroPadrao)
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure btnVoltarClick(Sender: TObject);
     procedure FormShow(Sender: TObject);
+    procedure btnAddClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -24,6 +25,17 @@ var
 implementation
 
 {$R *.fmx}
+
+procedure TfrmCadastroProduto.btnAddClick(Sender: TObject);
+begin
+  inherited;
+  if not Assigned(frmEdicaoProduto) then
+  begin
+    Application.CreateForm(TfrmEdicaoProduto, frmEdicaoProduto);
+    frmEdicaoProduto.TipoAlteracao := TAInclusao;
+  end;
+  frmEdicaoProduto.Show;
+end;
 
 procedure TfrmCadastroProduto.btnVoltarClick(Sender: TObject);
 begin

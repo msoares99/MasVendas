@@ -112,9 +112,7 @@ type
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
   private
     FTipoAlteracao: TAlteracao;
-    { Private declarations }
   public
-    { Public declarations }
     property TipoAlteracao: TAlteracao read FTipoAlteracao write FTipoAlteracao;
   end;
 
@@ -165,6 +163,10 @@ procedure TfrmEdicaoClienteFornecedor.FormShow(Sender: TObject);
 begin
   inherited;
   Layout18.Opacity := 0.6;
+  if (FTipoAlteracao = TAInclusao) then
+    lblTitulo.Text := 'Novo cliente'
+  else
+    lblTitulo.Text := 'Alterar cliente';
 end;
 
 procedure TfrmEdicaoClienteFornecedor.imgVoltarClick(Sender: TObject);

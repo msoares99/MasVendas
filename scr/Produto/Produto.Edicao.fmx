@@ -1,0 +1,655 @@
+inherited frmEdicaoProduto: TfrmEdicaoProduto
+  Caption = 'frmCadastrosEdicaoPadrao1'
+  ClientWidth = 380
+  StyleBook = StyleBook1
+  OnClose = FormClose
+  OnShow = FormShow
+  DesignerMasterStyle = 3
+  inherited Layout1: TLayout
+    Size.Width = 380.000000000000000000
+    inherited Rectangle1: TRectangle
+      Size.Width = 380.000000000000000000
+      inherited lblTitulo: TLabel
+        TextSettings.Font.StyleExt = {00060000000000000004000000}
+        Text = 'Produto'
+      end
+      inherited imgVoltar: TImage
+        MultiResBitmap.Height = 96
+        MultiResBitmap.Width = 96
+        MultiResBitmap = <
+          item
+            Width = 96
+            Height = 96
+            PNG = {
+              89504E470D0A1A0A0000000D4948445200000060000000600806000000E29877
+              38000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+              030F49444154785EEDDC3F6FD3401CC6F1E61F3152D9188085812E6583051810
+              330B94D740C504BC056063628581913F12ACA0C0C2000313E51520C186042322
+              71E4243CD7FC8404C4F1D93EE74AF5FD4851928BEDAACFCFCEDD258ED7000000
+              00000000000000C4309BCD5ABADDB5A75825057F6032993CD1FDCC9AB02AD3E9
+              F490C27FEDC277AC19ABA0F08F6559F6D1B2DF652FA1690AFFE4783CFE62B9FF
+              662FA3490AFFDC6834FA6E99FFC116415314FE95E170F8D3F2FE872D862628FC
+              9B0A7F62592F648B2224E5EAC6F8B777132E60AB201465EAC6F88FE7F116B3D5
+              1082F25C57F8AFE6D1FAB1555197DEEF8FFE3DC6F761ABA38EBC31BE0FDB04AA
+              52F86735C6FF667996669B4115CA6F6BD918DF876D0A6569CFBF5134C6F7619B
+              832F65E63DC6F7619B850FE5E5C6F88FE6D185619B461165E5C6F883796CE1D8
+              E6F7AD96DDD7E2C6F8BABDEC743AA7AC299896D8C37DA9F63FA7E03735C11AF4
+              7ABDE3D68405F276A4B6DD57E2C6F89A60BD25FCEA2A17406FCF5B699ABEE9F7
+              FB87AD0915542A80F6FC6DCD6E9F274972D09A5051A93E407BBD5BFE96DD5042
+              5E1FE05D0085DFD59E7FBFDD6E6F5B134AA8550085BFAEF09F29FC8BD684922A
+              1740E11FD104CB8DF14F5B132AC82BC0D24E587BFD098DF1DF117E73720BA0F0
+              CF688CFFBEDBED6E58131A506B2286FA96F601EE2DC87D89CE51505FA53E40A3
+              9E4F0AFFBC8AB0634D08ACF02D4885FBAA4EF8828E8681352120AF3E4045F8A1
+              A3E1928AF0D09A10887727AC22642AC2353DBC336F41088513B14574245C4DD3
+              F44192245D6B4281BC4EB852011C15E1B28AF0944F44FD042F80A322B8C9DA0B
+              BE1328D648011C1561C37D19CF5C61B9BC0204E13EB0CBB2EC83EE83B33F8122
+              CA8AD35262535E9C98159B32E3D4C4BD409DF3754ECE8D4CF9717A7A6C3A12F8
+              81466C2AC2A6266C9F2DD3526C13A84B45703FD2DBB15CBDD9EA084179F233D5
+              D894293FD48E4DB972A982BD40FD0217EB884D45E07235B1A908EE824D0BE70A
+              B6089AA62270C9B2D86CAEC045FB625211B86C656CCA9D0BB7C6A6ECDB2AC23D
+              7B0A000000000000000000E03FB4B6F60BD4219F3EF5C2EC460000000049454E
+              44AE426082}
+            FileName = 'C:\Users\Assis\Desktop\MasVendas\scr\Imagens\imgVoltar.png'
+          end>
+        OnClick = imgVoltarClick
+      end
+      inherited Image1: TImage
+        MultiResBitmap.Height = 96
+        MultiResBitmap.Width = 96
+        MultiResBitmap = <
+          item
+            Width = 96
+            Height = 96
+            PNG = {
+              89504E470D0A1A0A0000000D4948445200000060000000600806000000E29877
+              38000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+              052C49444154785EED9C6B88555518866734B58B119689466A6137E862106458
+              D08F2E104446457F02850AB1064222BA1089049144572CB01F513F0ABA12F523
+              B2A87E141104D18DC8ACB0A24C2AB1FB65CE39D3B3CE7A8B466772EDEF5C74CF
+              BC0F1C969EB3D7BBD7F7ACCD3E83FB73068C31C618638C31C618638C31C618B3
+              5732323232C86B2DAF057ACBF49366B37907F247868787BF68B55A47E96DD30F
+              907F5B92FF0F6CC25636E1047D6C7A09A2D7C8FB28D8846D7CB65887995E80E0
+              D5F23D266CC2768E59A2C34D3741EC95086EC9F5FFB18363976A9AE906085D81
+              FCA604EF168EFD85E16C4D379D80FC4B10DAC86ACB61CE1FCCBD40312602022F
+              46E4B09C5686A9BF917198E24C1510776EBA8AE5B232CC25A2B54A71A60A883B
+              0B81BFCB650832AE539CA902E29622FF67790C41C64D8A335540DC12E4FF248F
+              51D62ACE5401F98B91FF83248668369BF728CE5401F9C722FF5B790C81FCF58A
+              335540FED1C8FF461E4320FF6186298A34A5206D01F2B7B42DC67992D754459A
+              52B8F20F47FE67D9610CAEFC6718F651A42905F97390FF51D61803F92F923343
+              91A614DCCD6E341A1F648D3190FF32C3BE8A34A520ED20E4BFDDB61884F96F30
+              CC54A42985DBC501C87B3D6B8CC1FCB7C8395091A614DCEDCF6DE3B5AC3106F2
+              DF45FEC18A34A5E06E3AF25FC81A6320FF7D86D98A34A5206D1AF29F6F5B0CC2
+              4F4B9F70E5CF53A42905775391FF78D61803F9A9E767A1224D29B89B82FC47B3
+              C618C8FF0AF9472AD29482BB41E46FC81A63207F1BC3718A345540FE9D59630C
+              E47FC7957FBCE2EA01EB4E8DAAB3F4D73D066B58972476C00E5EA728AE3E70D5
+              DDC595B3892B67BEDEEA3BACE1D6EC3006EBFF91F59FAAB8FA40E1B7AB8654C4
+              168AE87BA730E7BC564B08C1BA7F25E34CC5D507D69EFAE3474131A953B86FF7
+              50CE758D4E1D82F5FE49C6798AAB0F2C7ADC46558A4A9DC227E9D09EC1392EE7
+              5C25FD9A6322F9E72BAE3EB0E821D5302E14D7D34E61B297738EE27ECD9D616E
+              838C4B15571F58749546D5D4297CBAA6760D323B6D196C927199E2EA038B4E8D
+              AA950AE7F0F405778E223A86AC6564FEA5F8CA3037DDB2562AAE3EB0E80BA385
+              332F750A2F535498B49164855B06937CB85A71F581B54F67F19FE63262303F7D
+              E15DA4C8CA10710619A9EF3E0CE7BF5E71F583C52F44C066D51282F9E98B6F85
+              228B61CE69CCEDA865908C9B15575FA8636EA3D1F83097140391B8680D2972B7
+              30E564E66CCFB363A47F1F525CFD41DE9CF4784EB585D026AC56E4B870CC891C
+              FBBDA68540FE7D8A9B3850D7ACF4803A971807C16B14B90B7C760CF2B7EAD010
+              C87F88615091130B0A9B4981AFB62BED8C758AFC17E42F42FED7FA3CCA23BC26
+              76BF2605A66E8397DAE5760019F733B4AF54E4CF47FEE7F99318E43DCD30395A
+              06113683829FCDA5C721630359F390FFB1DE0AA1B54CD3F22607149C5A3F9E6A
+              1BE800E487FF535C82356C4C17849635B9A0FED48590FAE4F7089CFB15E4EFA7
+              E54C4EF0901E88AFCF4AFA073F91BDC9E07ECD0422D226DCDD36D30790FF0EC3
+              1E7F1EBDD781945D9E96751BE4BFC76DE7109DD2EC0C726E90ABAEC317F62686
+              B93A95190F36610859E1C7866341DE6672FD3B184AC1D94AA4851F1FFE1772BE
+              643842D1A614AED8E559619CB489E42C52A4A90A3F1D3D219721907F95A24C14
+              36E141F9AC04F2FD0B30BA059B70AFBC1681FC5B34D5740B36A1A897336D96A6
+              986E83DF1BB3E6B141FE033AD4F40A6E2FABE47B14C87F4C87985EC3265C21EF
+              6D90FF9C3E32FD824D48ED862DE46FD45BA6DFB00987EA8FC618638C31C61863
+              8C31C618638C31C6748B8181BF01BC1C44039CB87E440000000049454E44AE42
+              6082}
+            FileName = 'C:\Users\Assis\Desktop\MasVendas\scr\Imagens\imgConfirmar.png'
+          end>
+        Position.X = 335.000000000000000000
+      end
+    end
+  end
+  object Layout2: TLayout
+    Align = Client
+    Margins.Left = 15.000000000000000000
+    Margins.Top = 10.000000000000000000
+    Margins.Right = 15.000000000000000000
+    Size.Width = 350.000000000000000000
+    Size.Height = 560.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object Layout4: TLayout
+      Align = Top
+      Size.Width = 350.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 7
+      object edtNome: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Bottom
+        StyleLookup = 'edtRazaoStyle1'
+        TabOrder = 1
+        TextSettings.FontColor = claWhite
+        Position.Y = 18.000000000000000000
+        Size.Width = 350.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = [Family, Size, Style]
+      end
+      object Label6: TLabel
+        Align = Top
+        StyledSettings = [Family]
+        Size.Width = 350.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.Font.StyleExt = {00060000000000000004000000}
+        TextSettings.FontColor = xFF0E6DD4
+        Text = 'Nome do produto*'
+        TabOrder = 0
+      end
+    end
+    object Layout5: TLayout
+      Align = Top
+      Margins.Top = 5.000000000000000000
+      Position.Y = 55.000000000000000000
+      Size.Width = 350.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 10
+      object Layout3: TLayout
+        Align = Left
+        Size.Width = 170.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 7
+        object edtCodBarras: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Bottom
+          StyleLookup = 'edtRazaoStyle1'
+          TabOrder = 1
+          TextSettings.FontColor = claWhite
+          Position.Y = 18.000000000000000000
+          Size.Width = 170.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          StyledSettings = [Family, Size, Style]
+        end
+        object Label1: TLabel
+          Align = Top
+          StyledSettings = [Family]
+          Size.Width = 170.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 14.000000000000000000
+          TextSettings.Font.StyleExt = {00060000000000000004000000}
+          TextSettings.FontColor = xFF0E6DD4
+          Text = 'C'#243'digo de barras'
+          TabOrder = 0
+        end
+      end
+      object Layout6: TLayout
+        Align = Right
+        Position.X = 180.000000000000000000
+        Size.Width = 170.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 6
+        object edtCodNota: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Bottom
+          StyleLookup = 'edtRazaoStyle1'
+          TabOrder = 1
+          TextSettings.FontColor = claWhite
+          Position.Y = 18.000000000000000000
+          Size.Width = 170.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          StyledSettings = [Family, Size, Style]
+        end
+        object Label2: TLabel
+          Align = Top
+          StyledSettings = [Family]
+          Size.Width = 170.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 14.000000000000000000
+          TextSettings.Font.StyleExt = {00060000000000000004000000}
+          TextSettings.FontColor = xFF0E6DD4
+          Text = 'C'#243'd. produto na nota'
+          TabOrder = 0
+        end
+      end
+    end
+    object Layout7: TLayout
+      Align = Top
+      Margins.Top = 5.000000000000000000
+      Position.Y = 165.000000000000000000
+      Size.Width = 350.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 8
+      object Layout8: TLayout
+        Align = Left
+        Margins.Top = 5.000000000000000000
+        Position.Y = 5.000000000000000000
+        Size.Width = 170.000000000000000000
+        Size.Height = 45.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 7
+        object edtPreco: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Bottom
+          StyleLookup = 'edtRazaoStyle1'
+          TabOrder = 1
+          TextSettings.FontColor = claWhite
+          Position.Y = 13.000000000000000000
+          Size.Width = 170.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          TextPrompt = '0,00'
+          StyledSettings = [Family, Size, Style]
+        end
+        object Label3: TLabel
+          Align = Top
+          StyledSettings = [Family]
+          Size.Width = 170.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 14.000000000000000000
+          TextSettings.Font.StyleExt = {00060000000000000004000000}
+          TextSettings.FontColor = xFF0E6DD4
+          Text = 'Pre'#231'o'
+          TabOrder = 0
+        end
+      end
+      object Layout9: TLayout
+        Align = Right
+        Margins.Top = 5.000000000000000000
+        Position.X = 180.000000000000000000
+        Position.Y = 5.000000000000000000
+        Size.Width = 170.000000000000000000
+        Size.Height = 45.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 6
+        object edtPeso: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Bottom
+          StyleLookup = 'edtRazaoStyle1'
+          TabOrder = 1
+          TextSettings.FontColor = claWhite
+          Position.Y = 13.000000000000000000
+          Size.Width = 170.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          TextPrompt = '0,0000'
+          StyledSettings = [Family, Size, Style]
+        end
+        object Label4: TLabel
+          Align = Top
+          StyledSettings = [Family]
+          Size.Width = 170.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 14.000000000000000000
+          TextSettings.Font.StyleExt = {00060000000000000004000000}
+          TextSettings.FontColor = xFF0E6DD4
+          Text = 'Peso'
+          TabOrder = 0
+        end
+      end
+    end
+    object Layout11: TLayout
+      Align = Top
+      Margins.Top = 5.000000000000000000
+      Position.Y = 220.000000000000000000
+      Size.Width = 350.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 6
+      object Label5: TLabel
+        Align = Top
+        StyledSettings = [Family]
+        Size.Width = 350.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.Font.StyleExt = {00060000000000000004000000}
+        TextSettings.FontColor = xFF0E6DD4
+        Text = 'Origem*'
+        TabOrder = 0
+      end
+      object cbxOrigem: TComboBox
+        Align = Client
+        ItemIndex = 0
+        Margins.Bottom = 5.000000000000000000
+        Size.Width = 350.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'ComboBox1Style1'
+        TabOrder = 1
+        object Cliente: TListBoxItem
+          TextSettings.Font.Size = 14.000000000000000000
+          TextSettings.FontColor = claWhite
+          StyledSettings = [Family, Style, Other]
+          IsSelected = True
+          Size.Width = 19.000000000000000000
+          Size.Height = 19.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = 'Cliente'
+        end
+        object Fornecedor: TListBoxItem
+          TextSettings.Font.Size = 14.000000000000000000
+          TextSettings.FontColor = claWhite
+          StyledSettings = [Family, Style, Other]
+          Size.Width = 44.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          Text = 'Fornecedor'
+        end
+      end
+    end
+    object Layout13: TLayout
+      Align = Top
+      Margins.Top = 5.000000000000000000
+      Position.Y = 275.000000000000000000
+      Size.Width = 350.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 11
+      object Layout10: TLayout
+        Align = Left
+        Size.Width = 170.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 7
+        object Label7: TLabel
+          Align = Top
+          StyledSettings = [Family]
+          Size.Width = 170.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 14.000000000000000000
+          TextSettings.Font.StyleExt = {00060000000000000004000000}
+          TextSettings.FontColor = xFF0E6DD4
+          Text = 'NCM*'
+          TabOrder = 0
+        end
+        object cbxNCM: TComboBox
+          Align = Client
+          ItemIndex = 0
+          Margins.Bottom = 5.000000000000000000
+          Size.Width = 170.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'ComboBox1Style1'
+          TabOrder = 1
+          object ListBoxItem1: TListBoxItem
+            TextSettings.Font.Size = 14.000000000000000000
+            TextSettings.FontColor = claWhite
+            StyledSettings = [Family, Style, Other]
+            IsSelected = True
+            Size.Width = 19.000000000000000000
+            Size.Height = 19.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            Text = 'Cliente'
+          end
+          object ListBoxItem2: TListBoxItem
+            TextSettings.Font.Size = 14.000000000000000000
+            TextSettings.FontColor = claWhite
+            StyledSettings = [Family, Style, Other]
+            Size.Width = 44.000000000000000000
+            Size.Height = 44.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            Text = 'Fornecedor'
+          end
+        end
+      end
+      object Layout12: TLayout
+        Align = Right
+        Position.X = 180.000000000000000000
+        Size.Width = 170.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 6
+        object Label8: TLabel
+          Align = Top
+          StyledSettings = [Family]
+          Size.Width = 170.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 14.000000000000000000
+          TextSettings.Font.StyleExt = {00060000000000000004000000}
+          TextSettings.FontColor = xFF0E6DD4
+          Text = 'CEST*'
+          TabOrder = 0
+        end
+        object cbxCEST: TComboBox
+          Align = Client
+          ItemIndex = 0
+          Margins.Bottom = 5.000000000000000000
+          Size.Width = 170.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'ComboBox1Style1'
+          TabOrder = 1
+          object ListBoxItem3: TListBoxItem
+            TextSettings.Font.Size = 14.000000000000000000
+            TextSettings.FontColor = claWhite
+            StyledSettings = [Family, Style, Other]
+            IsSelected = True
+            Size.Width = 19.000000000000000000
+            Size.Height = 19.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            Text = 'Cliente'
+          end
+          object ListBoxItem4: TListBoxItem
+            TextSettings.Font.Size = 14.000000000000000000
+            TextSettings.FontColor = claWhite
+            StyledSettings = [Family, Style, Other]
+            Size.Width = 44.000000000000000000
+            Size.Height = 44.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            Text = 'Fornecedor'
+          end
+        end
+      end
+    end
+    object Layout16: TLayout
+      Align = Top
+      Margins.Top = 5.000000000000000000
+      Position.Y = 110.000000000000000000
+      Size.Width = 350.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 9
+      object Layout17: TLayout
+        Align = Left
+        Size.Width = 170.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 7
+        object edtQuantidade: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Bottom
+          StyleLookup = 'edtRazaoStyle1'
+          TabOrder = 1
+          TextSettings.FontColor = claWhite
+          Position.Y = 18.000000000000000000
+          Size.Width = 170.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          StyledSettings = [Family, Size, Style]
+        end
+        object Label11: TLabel
+          Align = Top
+          StyledSettings = [Family]
+          Size.Width = 170.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 14.000000000000000000
+          TextSettings.Font.StyleExt = {00060000000000000004000000}
+          TextSettings.FontColor = xFF0E6DD4
+          Text = 'Quantidade'
+          TabOrder = 0
+        end
+      end
+      object Layout18: TLayout
+        Align = Right
+        Position.X = 180.000000000000000000
+        Size.Width = 170.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 6
+        object Label12: TLabel
+          Align = Top
+          StyledSettings = [Family]
+          Size.Width = 170.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 14.000000000000000000
+          TextSettings.Font.StyleExt = {00060000000000000004000000}
+          TextSettings.FontColor = xFF0E6DD4
+          Text = 'Grupo de produtos'
+          TabOrder = 0
+        end
+        object cbxGrupo: TComboBox
+          Align = Client
+          ItemIndex = 0
+          Size.Width = 170.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'ComboBox1Style1'
+          TabOrder = 1
+          object ListBoxItem9: TListBoxItem
+            TextSettings.Font.Size = 14.000000000000000000
+            TextSettings.FontColor = claWhite
+            StyledSettings = [Family, Style, Other]
+            IsSelected = True
+            Size.Width = 19.000000000000000000
+            Size.Height = 19.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            Text = 'Cliente'
+          end
+          object ListBoxItem10: TListBoxItem
+            TextSettings.Font.Size = 14.000000000000000000
+            TextSettings.FontColor = claWhite
+            StyledSettings = [Family, Style, Other]
+            Size.Width = 44.000000000000000000
+            Size.Height = 44.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            Text = 'Fornecedor'
+          end
+        end
+      end
+    end
+  end
+  object StyleBook1: TStyleBook
+    Styles = <
+      item
+      end
+      item
+        Platform = 'Windows 10 Desktop'
+        ResourcesBin = {
+          464D585F5354594C4520322E3501060E65647452617A616F5374796C653103A1
+          09061965647452617A616F5374796C65314C6162656C5374796C653103060100
+          5450463007544C61796F757400095374796C654E616D65060E65647452617A61
+          6F5374796C653105416C69676E070643656E7465720A53697A652E5769647468
+          0500000000000000A507400B53697A652E486569676874050000000000000080
+          04401453697A652E506C6174666F726D44656661756C7408085461624F726465
+          72020C0012544163746976655374796C654F626A65637400095374796C654E61
+          6D65060A6261636B67726F756E6405416C69676E0708436F6E74656E74730C53
+          6F757263654C6F6F6B7570061B57696E646F7773203130204465736B746F7073
+          74796C652E706E670A53697A652E57696474680500000000000000A507400B53
+          697A652E48656967687405000000000000008004401453697A652E506C617466
+          6F726D44656661756C74080756697369626C65080D4163746976655472696767
+          65720707466F63757365640A4163746976654C696E6B0E010E436170496E7365
+          74732E4C6566740500000000000000E001400D436170496E736574732E546F70
+          0500000000000000E001400F436170496E736574732E52696768740500000000
+          000000E0014010436170496E736574732E426F74746F6D0500000000000000E0
+          01400F536F75726365526563742E4C65667405000000000000008507400E536F
+          75726365526563742E546F700500000000000000A2054010536F757263655265
+          63742E5269676874050000000000008098074011536F75726365526563742E42
+          6F74746F6D0500000000000000DC054000010E436170496E736574732E4C6566
+          740500000000000000A002400D436170496E736574732E546F70050000000000
+          0000A002400F436170496E736574732E52696768740500000000000000A00240
+          10436170496E736574732E426F74746F6D0500000000000000A0024005536361
+          6C650500000000000000C0FF3F0F536F75726365526563742E4C656674050000
+          0000000080C707400E536F75726365526563742E546F700500000000000000F2
+          054010536F75726365526563742E52696768740500000000000080E407401153
+          6F75726365526563742E426F74746F6D0500000000000000A5064000010E4361
+          70496E736574732E4C6566740500000000000000E002400D436170496E736574
+          732E546F700500000000000000E002400F436170496E736574732E5269676874
+          0500000000000000E0024010436170496E736574732E426F74746F6D05000000
+          00000000E00240055363616C6505000000000000008000400F536F7572636552
+          6563742E4C65667405000000000000008508400E536F75726365526563742E54
+          6F700500000000000000A2064010536F75726365526563742E52696768740500
+          00000000008098084011536F75726365526563742E426F74746F6D0500000000
+          000000DC064000000A536F757263654C696E6B0E010E436170496E736574732E
+          4C6566740500000000000000E001400D436170496E736574732E546F70050000
+          0000000000E001400F436170496E736574732E52696768740500000000000000
+          E0014010436170496E736574732E426F74746F6D0500000000000000E001400F
+          536F75726365526563742E4C6566740500000000000000E106400E536F757263
+          65526563742E546F700500000000000000A2054010536F75726365526563742E
+          5269676874050000000000000084074011536F75726365526563742E426F7474
+          6F6D0500000000000000DC054000010E436170496E736574732E4C6566740500
+          000000000000A002400D436170496E736574732E546F700500000000000000A0
+          02400F436170496E736574732E52696768740500000000000000A00240104361
+          70496E736574732E426F74746F6D0500000000000000A00240055363616C6505
+          00000000000000C0FF3F0F536F75726365526563742E4C656674050000000000
+          0080A807400E536F75726365526563742E546F700500000000000000F2054010
+          536F75726365526563742E52696768740500000000000000C6074011536F7572
+          6365526563742E426F74746F6D0500000000000000A5064000010E436170496E
+          736574732E4C6566740500000000000000E002400D436170496E736574732E54
+          6F700500000000000000E002400F436170496E736574732E5269676874050000
+          0000000000E0024010436170496E736574732E426F74746F6D05000000000000
+          00E00240055363616C6505000000000000008000400F536F7572636552656374
+          2E4C6566740500000000000000E107400E536F75726365526563742E546F7005
+          00000000000000A2064010536F75726365526563742E52696768740500000000
+          00000084084011536F75726365526563742E426F74746F6D0500000000000000
+          DC0640000013546F756368416E696D6174696F6E2E4C696E6B0E00000007544C
+          61796F757400095374796C654E616D650607636F6E74656E7405416C69676E07
+          06436C69656E74064C6F636B6564090C4D617267696E732E4C65667405000000
+          00000000C000400B4D617267696E732E546F700500000000000000C000400D4D
+          617267696E732E52696768740500000000000000C000400E4D617267696E732E
+          426F74746F6D0500000000000000C000400A53697A652E576964746805000000
+          00000000A107400B53697A652E4865696768740500000000000000D003401453
+          697A652E506C6174666F726D44656661756C7408000007544C61796F75740009
+          5374796C654E616D650607627574746F6E7305416C69676E0705526967687406
+          4C6F636B6564090B4D617267696E732E546F7005000000000000008000400D4D
+          617267696E732E526967687405000000000000008000400E4D617267696E732E
+          426F74746F6D05000000000000008000400A506F736974696F6E2E5805000000
+          00000000A407400A506F736974696F6E2E5905000000000000008000400A5369
+          7A652E576964746805000000000000000000000B53697A652E48656967687405
+          00000000000000E003401453697A652E506C6174666F726D44656661756C7408
+          00000C5442727573684F626A65637400095374796C654E616D65060A666F7265
+          67726F756E640B42727573682E436F6C6F720708636C61426C61636B00000C54
+          42727573684F626A65637400095374796C654E616D65060973656C656374696F
+          6E0B42727573682E436F6C6F72070978374632413936464600000B54466F6E74
+          4F626A65637400095374796C654E616D650604666F6E74000006544C6162656C
+          00095374796C654E616D65060670726F6D7074064C6F636B656409074F706163
+          697479050000000000000080FE3F0B5374796C654C6F6F6B7570061965647452
+          617A616F5374796C65314C6162656C5374796C65310756697369626C65080000
+          005450463007544C61796F757400095374796C654E616D65061965647452617A
+          616F5374796C65314C6162656C5374796C65310A53697A652E57696474680500
+          000000000000A507400B53697A652E4865696768740500000000000000800440
+          1453697A652E506C6174666F726D44656661756C74080756697369626C650808
+          5461624F7264657202030005545465787400095374796C654E616D6506047465
+          787405416C69676E0706436C69656E74064C6F636B6564090748697454657374
+          080A53697A652E57696474680500000000000000A507400B53697A652E486569
+          67687405000000000000008004401453697A652E506C6174666F726D44656661
+          756C7408000000}
+      end>
+  end
+end
