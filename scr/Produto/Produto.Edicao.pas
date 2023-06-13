@@ -30,22 +30,13 @@ type
     Layout9: TLayout;
     edtPeso: TEdit;
     Label4: TLabel;
-    Layout11: TLayout;
-    Label5: TLabel;
-    cbxOrigem: TComboBox;
-    Cliente: TListBoxItem;
-    Fornecedor: TListBoxItem;
     Layout13: TLayout;
     Layout10: TLayout;
     Label7: TLabel;
     cbxNCM: TComboBox;
-    ListBoxItem1: TListBoxItem;
-    ListBoxItem2: TListBoxItem;
     Layout12: TLayout;
     Label8: TLabel;
     cbxCEST: TComboBox;
-    ListBoxItem3: TListBoxItem;
-    ListBoxItem4: TListBoxItem;
     Layout16: TLayout;
     Layout17: TLayout;
     edtQuantidade: TEdit;
@@ -55,9 +46,21 @@ type
     cbxGrupo: TComboBox;
     ListBoxItem9: TListBoxItem;
     ListBoxItem10: TListBoxItem;
+    Layout14: TLayout;
+    Label9: TLabel;
+    cbxOrigem: TComboBox;
+    origem0: TListBoxItem;
+    origem1: TListBoxItem;
+    origem2: TListBoxItem;
+    origem3: TListBoxItem;
+    origem4: TListBoxItem;
+    origem5: TListBoxItem;
+    origem6: TListBoxItem;
+    origem7: TListBoxItem;
     procedure imgVoltarClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure FormShow(Sender: TObject);
+    procedure cbxNCMClick(Sender: TObject);
   private
     FTipoAlteracao: TAlteracao;
     { Private declarations }
@@ -72,6 +75,12 @@ var
 implementation
 
 {$R *.fmx}
+
+procedure TfrmEdicaoProduto.cbxNCMClick(Sender: TObject);
+begin
+  inherited;
+  ShowMessage('113123');
+end;
 
 procedure TfrmEdicaoProduto.FormClose(Sender: TObject; var Action: TCloseAction);
 begin

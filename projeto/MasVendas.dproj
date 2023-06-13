@@ -5,7 +5,7 @@
         <FrameworkType>FMX</FrameworkType>
         <Base>True</Base>
         <Config Condition="'$(Config)'==''">Debug</Config>
-        <Platform Condition="'$(Platform)'==''">Win32</Platform>
+        <Platform Condition="'$(Platform)'==''">Android</Platform>
         <TargetedPlatforms>32787</TargetedPlatforms>
         <AppType>Application</AppType>
         <MainSource>MasVendas.dpr</MainSource>
@@ -230,6 +230,10 @@
         </DCCReference>
         <DCCReference Include="..\scr\Produto\Produto.Edicao.pas">
             <Form>frmEdicaoProduto</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="..\scr\Geral\Geral.Configuracao.Main.pas">
+            <Form>frmConfiguracao</Form>
             <FormType>fmx</FormType>
         </DCCReference>
         <BuildConfiguration Include="Base">

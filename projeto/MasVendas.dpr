@@ -14,12 +14,14 @@ uses
   uCNPJ in '..\scr\API\uCNPJ.pas',
   uPixMercadoPago in '..\scr\API\uPixMercadoPago.pas',
   Produto.Main in '..\scr\Produto\Produto.Main.pas' {frmCadastroPadrao1},
-  Produto.Edicao in '..\scr\Produto\Produto.Edicao.pas' {frmEdicaoProduto};
+  Produto.Edicao in '..\scr\Produto\Produto.Edicao.pas' {frmEdicaoProduto},
+  Geral.Configuracao.Main in '..\scr\Geral\Geral.Configuracao.Main.pas' {frmConfiguracao};
 
 {$R *.res}
 
 begin
   Application.Initialize;
   Application.CreateForm(TfrmPrincipal, frmPrincipal);
+  Application.CreateForm(TfrmConfiguracao, frmConfiguracao);
   Application.Run;
 end.
