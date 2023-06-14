@@ -32,6 +32,7 @@ type
     Image5: TImage;
     procedure btnVoltarClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure recNotasClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -45,6 +46,8 @@ implementation
 
 {$R *.fmx}
 
+uses Geral.Configuracao.DadosEmpresa;
+
 procedure TfrmConfiguracao.btnVoltarClick(Sender: TObject);
 begin
   Close;
@@ -54,6 +57,15 @@ procedure TfrmConfiguracao.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
   Action := TCloseAction.caFree;
   frmConfiguracao := nil;
+end;
+
+procedure TfrmConfiguracao.recNotasClick(Sender: TObject);
+begin
+  if (not assigned(frmConfiguracaoDadosEmpresa)) then
+  begin
+    Application.CreateForm(TfrmConfiguracaoDadosEmpresa, frmConfiguracaoDadosEmpresa);
+    frmConfiguracaoDadosEmpresa.Show;
+  end;
 end;
 
 end.

@@ -59,6 +59,7 @@ type
     procedure PreviousTabAction1Update(Sender: TObject);
     procedure recCadastrosClick(Sender: TObject);
     procedure recNotasClick(Sender: TObject);
+    procedure recConfiguracoesClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -71,6 +72,8 @@ var
 implementation
 
 {$R *.fmx}
+
+uses Geral.Configuracao.Main;
 
 procedure TfrmPrincipal.NextTabAction1Update(Sender: TObject);
 begin
@@ -88,6 +91,15 @@ begin
   begin
     Application.CreateForm(TfrmCadastroProduto, frmCadastroProduto);
     frmCadastroProduto.Show;
+  end;
+end;
+
+procedure TfrmPrincipal.recConfiguracoesClick(Sender: TObject);
+begin
+  if (not assigned(frmConfiguracao)) then
+  begin
+    Application.CreateForm(TfrmConfiguracao, frmConfiguracao);
+    frmConfiguracao.Show;
   end;
 end;
 

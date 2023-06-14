@@ -13,15 +13,15 @@ uses
   uCEP in '..\scr\API\uCEP.pas',
   uCNPJ in '..\scr\API\uCNPJ.pas',
   uPixMercadoPago in '..\scr\API\uPixMercadoPago.pas',
-  Produto.Main in '..\scr\Produto\Produto.Main.pas' {frmCadastroPadrao1},
+  Produto.Main in '..\scr\Produto\Produto.Main.pas' {frmCadastroProduto},
   Produto.Edicao in '..\scr\Produto\Produto.Edicao.pas' {frmEdicaoProduto},
-  Geral.Configuracao.Main in '..\scr\Geral\Geral.Configuracao.Main.pas' {frmConfiguracao};
+  Geral.Configuracao.Main in '..\scr\Geral\Geral.Configuracao.Main.pas' {frmConfiguracao},
+  Geral.Configuracao.DadosEmpresa in '..\scr\Geral\Geral.Configuracao.DadosEmpresa.pas' {frmConfiguracaoDadosEmpresa};
 
 {$R *.res}
 
 begin
   Application.Initialize;
   Application.CreateForm(TfrmPrincipal, frmPrincipal);
-  Application.CreateForm(TfrmConfiguracao, frmConfiguracao);
   Application.Run;
 end.

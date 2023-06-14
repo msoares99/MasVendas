@@ -225,7 +225,7 @@
         <DCCReference Include="..\scr\API\uCNPJ.pas"/>
         <DCCReference Include="..\scr\API\uPixMercadoPago.pas"/>
         <DCCReference Include="..\scr\Produto\Produto.Main.pas">
-            <Form>frmCadastroPadrao1</Form>
+            <Form>frmCadastroProduto</Form>
             <FormType>fmx</FormType>
         </DCCReference>
         <DCCReference Include="..\scr\Produto\Produto.Edicao.pas">
@@ -234,6 +234,10 @@
         </DCCReference>
         <DCCReference Include="..\scr\Geral\Geral.Configuracao.Main.pas">
             <Form>frmConfiguracao</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="..\scr\Geral\Geral.Configuracao.DadosEmpresa.pas">
+            <Form>frmConfiguracaoDadosEmpresa</Form>
             <FormType>fmx</FormType>
         </DCCReference>
         <BuildConfiguration Include="Base">
