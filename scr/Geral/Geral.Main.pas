@@ -73,7 +73,7 @@ implementation
 
 {$R *.fmx}
 
-uses Geral.Configuracao.Main;
+uses Configuracao.Main;
 
 procedure TfrmPrincipal.NextTabAction1Update(Sender: TObject);
 begin

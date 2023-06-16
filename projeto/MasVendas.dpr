@@ -15,13 +15,15 @@ uses
   uPixMercadoPago in '..\scr\API\uPixMercadoPago.pas',
   Produto.Main in '..\scr\Produto\Produto.Main.pas' {frmCadastroProduto},
   Produto.Edicao in '..\scr\Produto\Produto.Edicao.pas' {frmEdicaoProduto},
-  Geral.Configuracao.Main in '..\scr\Geral\Geral.Configuracao.Main.pas' {frmConfiguracao},
-  Geral.Configuracao.DadosEmpresa in '..\scr\Geral\Geral.Configuracao.DadosEmpresa.pas' {frmConfiguracaoDadosEmpresa};
+  Configuracao.DadosEmpresa in '..\scr\Configuracao\Configuracao.DadosEmpresa.pas' {frmConfiguracaoDadosEmpresa},
+  Configuracao.Main in '..\scr\Configuracao\Configuracao.Main.pas' {frmConfiguracao};
 
 {$R *.res}
 
 begin
   Application.Initialize;
   Application.CreateForm(TfrmPrincipal, frmPrincipal);
+  Application.CreateForm(TfrmConfiguracaoDadosEmpresa, frmConfiguracaoDadosEmpresa);
+  Application.CreateForm(TfrmConfiguracao, frmConfiguracao);
   Application.Run;
 end.

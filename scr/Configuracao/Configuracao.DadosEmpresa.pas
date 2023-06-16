@@ -1,4 +1,4 @@
-unit Geral.Configuracao.DadosEmpresa;
+unit Configuracao.DadosEmpresa;
 
 interface
 

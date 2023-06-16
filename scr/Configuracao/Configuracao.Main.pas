@@ -1,4 +1,4 @@
-unit Geral.Configuracao.Main;
+unit Configuracao.Main;
 
 interface
 
@@ -46,7 +46,7 @@ implementation
 
 {$R *.fmx}
 
-uses Geral.Configuracao.DadosEmpresa;
+uses Configuracao.DadosEmpresa;
 
 procedure TfrmConfiguracao.btnVoltarClick(Sender: TObject);
 begin
